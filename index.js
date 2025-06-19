@@ -1,17 +1,18 @@
-document.getElementById('body').innerHTML = `
+
+fetch('main.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('body').innerHTML = `
         <div id="content">
             <div id="message">
                 <p>Estas acá porque te elegí.</p>
                 <p>Hay un mensaje oculto en esta página. Decifralo para continuar.</p>
                 <p>Mucha suerte.</p>
             </div>
-            <p style="color: #000; position: absolute;">aHR0cHM6Ly9pbWd1ci5jb20vYS9Yd1RhMUR6</p>
+            <p style="color: #000; position: absolute;">${data._0xijk}</p>
         </div>
     `;
 
-fetch('main.json')
-  .then(response => response.json())
-  .then(data => {
     const message = document.getElementById('message');
     message.innerHTML += `
     <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
@@ -46,7 +47,7 @@ fetch('main.json')
             document.getElementById('body').innerHTML = `
               <div id="content">
                 <div id="message">
-                  <p>¡Felicitaciones! Descubriste todos los acertijos. Soy 01110011 01101001 01110010 01101111. Veni a contarme tan pronto hayas terminado.</p>
+                  <p>¡Felicitaciones! Descubriste todos los acertijos. Soy ${data._0xghj}. Veni a contarme tan pronto hayas terminado.</p>
                 </div>
               </div>
             `;
