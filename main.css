@@ -1,0 +1,38 @@
+ body {
+        background-color: #000;
+        overflow: hidden;
+    }
+    #message {
+        color: #fff;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #message p {
+        margin-bottom: 50px;
+    }
+    #content {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    input{
+        font-family: 'Courier New', Courier, monospace;
+        height: 40px;
+        width: 300px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #feedback, #feedback2 {
+        font-size: 20px;
+        margin-top: 40px;
+        width: 100%;
+    }
