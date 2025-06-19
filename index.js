@@ -52,10 +52,16 @@ fetch('main.json?' + Date.now())
             `;
           } else {
             feedback2.innerHTML = `<span style="padding: 20px; color: #b00; font-size: 0.9em;">No te rindas</span>`;
+            setTimeout(() => {
+              feedback2.innerHTML = '';
+            }, 2000);
           }
         });
       } else {
         feedback.innerHTML = `<span style="padding: 20px; color: #b00; font-size: 0.9em;">No te rindas</span>`;
+        setTimeout(() => {
+          feedback.innerHTML = '';
+        }, 2000);
       }
     });
   });
