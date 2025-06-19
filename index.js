@@ -46,7 +46,7 @@ fetch('main.json')
             document.getElementById('body').innerHTML = `
               <div id="content">
                 <div id="message">
-                  <p>¡Felicitaciones! Descubriste todos los acertijos. Soy Siro. Veni a contarme tan pronto hayas terminado.</p>
+                  <p>¡Felicitaciones! Descubriste todos los acertijos. Soy 01110011 01101001 01110010 01101111. Veni a contarme tan pronto hayas terminado.</p>
                 </div>
               </div>
             `;
