@@ -47,7 +47,7 @@ fetch('main.json')
             document.getElementById('body').innerHTML = `
               <div id="content">
                 <div id="message">
-                  <p>¡Felicitaciones! Descubriste todos los acertijos. Soy ${data._0xghj}. Veni a contarme tan pronto hayas terminado.</p>
+                  <p>${data._0xghj}</p>
                 </div>
               </div>
             `;
