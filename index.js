@@ -1,5 +1,4 @@
-
-fetch('main.json')
+fetch('main.json?' + Date.now())
   .then(response => response.json())
   .then(data => {
     document.getElementById('body').innerHTML = `
